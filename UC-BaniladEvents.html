@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UC-BaniladWiki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="evo-calendar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="evo-calendar.midnight-blue.min.css"/>
+    <title>Events</title>
+</head>
+<body>
+        <section class="sub-heading">
+            <nav>
+                <a href="index.html"><img src="University-of-Cebu-Logo.png"></a>
+                <div class="ucb-links" id="ucb_links">
+                    <i onclick="hideBurger()" class="fa fa-times" aria-hidden="true"></i>
+                    <ul>
+                      <li><a href="index.html">HOME</a></li>
+                        <li><a href="UC-BaniladAboutUs.html">ABOUT</a></li>
+                        <li><a href="UC-BaniladClasses.html">CLASSES</a></li>
+                        <li><a href="UC-BaniladDeans.html">DEANS</a></li>
+                        <li><a href="UC-BaniladEvents.html">EVENTS</a></li>
+                        <li><a href="UC-BaniladReviews.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <i onclick="showBurger()" class="fa fa-bars" aria-hidden="true"></i>
+            </nav>
+            <h1>UC-Banilad Events</h1>
+        </section>
+<section class="ucb-calendar">
+        <div id="calendar"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="evo-calendar.min.js"></script>
+
+        <script>
+        
+        $(document).ready(function() {
+        $('#calendar').evoCalendar({
+        theme: 'Midnight Blue',
+        calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/0001", // Event date (required)
+        description:"As the clock strikes midnight, a quest unfolds—a new year dawns with cheers and anticipation. It's a time for reflection, fresh beginnings, and shared optimism. Embrace the grand spectacle of new possibilities on this epic journey!",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Enrollment Period", // Event name (required)
+        date: ["May/15/2023","August/22/2023"], // Event date (required)
+        description:"The enrollment period marks the academic quest's crucial chapter. Students navigate paperwork, register for courses, and plan their educational journey. Advisors guide them in acquiring necessary scrolls. Each enrollee becomes a protagonist, forging alliances with knowledge and setting the stage for challenges ahead. It's a time of preparation and the beginning of a new academic adventure.",
+        type: "event", // Event type (required)
+      },
+      {
+        id: 'event3', // Event's ID (required)
+        name: "Ninoy Aquino Day", // Event name (required)
+        date: "August/21/2023", // Event date (required)
+        description:"In the Philippine realm, Ninoy Aquino Day on August 21st is a quest to honor Senator Benigno 'Ninoy' Aquino Jr. Citizens pay homage to his sacrifices, reflecting on his role as a symbol of democracy and the nation's history.",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event4', // Event's ID (required)
+        name: "Starting of Class", // Event name (required)
+        date: "August/22/2023", // Event date (required)
+        description:"",
+        type: "event", // Event type (required)
+      },
+      {
+        id: 'event5', // Event's ID (required)
+        name: "Adjustment Period", // Event name (required)
+        date: ["August/22/2023","August/26/2023"], // Event date (required)
+        description:"The adjustment period is a crucial phase in the academic journey, where students fine-tune schedules and adapt to challenges. Navigating course adjustments and seeking balance, it's a time of flexibility and strategic recalibration before the next chapter begins.",
+        type: "event", // Event type (required)
+      },
+      {
+        id: 'event6', // Event's ID (required)
+        name: "National Heroes Day", // Event name (required)
+        date: "August/28/2023", // Event date (required)
+        description:"National Heroes Day in the Philippines, observed every last Monday of August, honors brave individuals who shaped the nation's history. Through ceremonies and activities, Filipinos pay tribute to those who fought for freedom and justice, fostering a deep sense of patriotism.",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event7', // Event's ID (required)
+        name: "Sergio Osmeña Day", // Event name (required)
+        date: "September/9/2023", // Event date (required)
+        description:"",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event8', // Event's ID (required)
+        name: "Prelim Examination", // Event name (required)
+        date: ["September/21/2023","September/22/2023"], // Event date (required)
+        description:"The prelim examination is a crucial academic quest, where students face assessments to showcase their understanding of the course material. Professors craft challenging quests to evaluate comprehension and problem-solving skills, influencing the characters' progression in the academic adventure.",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event9', // Event's ID (required)
+        name: "Midterm Examination", // Event name (required)
+        date: ["October/19/2023","October/20/2023"], // Event date (required)
+        description:"The midterm examination is a crucial checkpoint in the academic journey, where students demonstrate their understanding and mastery of course material. Challenging quests evaluate critical thinking, shaping the trajectory of their academic adventure.",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event10', // Event's ID (required)
+        name: "Processing of...", // Event name (required)
+        date: ["October/21/2023","October/31/2023"], // Event date (required)
+        description:"Application for Graduation (for graduating students)",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event11', // Event's ID (required)
+        name: "All Saint's Day", // Event name (required)
+        date: "November/1/2023", // Event date (required)
+        description:"All Saints' Day, observed on November 1st, is a sacred quest where communities unite to honor saints, martyrs, and departed loved ones. Adventurers visit cemeteries, offering prayers and adorning graves with flowers and candles. It's a day of reflection and remembrance, celebrating the lives and legacies of those who have ventured into the next realm.",
+        type: "holiday" // Event type (required)
+      },
+      {
+        id: 'event12', // Event's ID (required)
+        name: "All Souls's Day", // Event name (required)
+        date: "November/2/2023", // Event date (required)
+        description:"All Souls' Day on November 2nd is a solemn quest where communities unite to remember and pray for departed souls. Pilgrims visit cemeteries, illuminating the realm beyond with candles and tributes, fostering a day of reflection and compassionate remembrance.",
+        type: "holiday" // Event type (required)
+      },
+      {
+        id: 'event13', // Event's ID (required)
+        name: "Deadline for...", // Event name (required)
+        date: "November/7/2023", // Event date (required)
+        description:" Submission of Midterm Grade",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event14', // Event's ID (required)
+        name: "Intramurals/UC Days", // Event name (required)
+        date: "[November/9/2023,November/11/2023]", // Event date (required)
+        description:"Intramurals, a spirited chapter in the academic calendar, transform the campus into an arena of friendly competition. Students showcase their skills in various activities, fostering camaraderie and creating lasting memories.",
+        type: "birthday" // Event type (required)
+      },
+      {
+        id: 'event15', // Event's ID (required)
+        name: "Semi-Final Examination", // Event name (required)
+        date: "[November/20/2023,November/21/2023]", // Event date (required)
+        description:"The semi-final examination is a pivotal moment in the academic journey, where students demonstrate mastery through assessments. Professors present challenging quests, evaluating critical thinking and problem-solving skills, influencing the characters' progress as they approach the final chapters of the term.",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event16', // Event's ID (required)
+        name: "Bonifacio Day", // Event name (required)
+        date: "November/30/2023", // Event date (required)
+        description:"Bonifacio Day, observed on November 30th, is a quest to honor the heroism of Andrés Bonifacio, a key figure in the Philippines' struggle for independence. Celebrated with ceremonies and tributes, adventurers reflect on his enduring legacy, embodying the ideals of freedom and patriotism in the realm's history.",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event17', // Event's ID (required)
+        name: "Feast of the", // Event name (required)
+        date: "December/8/2023", // Event date (required)
+        description:"Immaculate Conception",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event18', // Event's ID (required)
+        name: "Final Exam", // Event name (required)
+        date: ["December/12/2023","December/13/2023"], // Event date (required)
+        description:"(Graduating) The Final Exam is the ultimate challenge in the academic quest, a decisive battle determining students' fate. Professors, as mentors, craft a mastery test, marking the culmination of their academic journey.",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event19', // Event's ID (required)
+        name: "Deadline for...", // Event name (required)
+        date: "December/20/2023", // Event date (required)
+        description:"submission of Final Grades/Oath of Candidacy",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event20', // Event's ID (required)
+        name: "Final Exam", // Event name (required)
+        date: ["December/21/2023","December/23/2023"], // Event date (required)
+        description:"(Non-Graduating) The Final Exam is the ultimate challenge in the academic quest, a decisive battle determining students' fate. Professors, as mentors, craft a mastery test, marking the culmination of their academic journey.",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event21', // Event's ID (required)
+        name: "Christmas", // Event name (required)
+        date: "December/25/2023", // Event date (required)
+        description:"Christmas, a global celebration, is a magical quest of joy and unity. Families gather, exchanging gifts and sharing festive cheer. Decorations brighten homes, and the season is marked by love, goodwill, and gratitude.",
+        type: "holiday", // Event type (required)
+        everyYear: true
+      },
+      {
+        id: 'event22', // Event's ID (required)
+        name: "Tentative Schedule...", // Event name (required)
+        date: ["December/26/2023","December/29/2023"], // Event date (required)
+        description:"for Mid-year Commencement Excercises (All campuses)",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event23', // Event's ID (required)
+        name: "Deadline for...", // Event name (required)
+        date: "January/9/2024", // Event date (required)
+        description:"submission of final grades of non-graduating",
+        type: "event" // Event type (required)
+      },
+      {
+        id: 'event24', // Event's ID (required)
+        name: "Semestral Break", // Event name (required)
+        date: ["December/24/2023","January/9/2024"], // Event date (required)
+        description:"The semestral break, a brief interlude in the academic quest, offers students a chance to rest and rejuvenate. It's a time for personal quests and preparation for the challenges ahead.",
+        type: "holiday" // Event type (required)
+      },
+      
+    ]
+         })
+        })
+        
+        </script>
+
+</section>
+   <section class="ucb-footer" style="background-color: rgb(21,42,77);">
+            <h2>More Info</h3>
+            <p>For more info about the game, here are the social medias.</p>
+            <div class="ucb-icons">
+                <a href="https://www.facebook.com/UniversityOfCebuWebmasters/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fuc_webmasters" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ucwebmaster/?hl=en" class="fa fa-instagram"></a>
+            </div>
+    </section>
+
+<script>
+
+    var ucb_links = document.getElementById("ucb_links");
+
+    function showBurger(){
+        ucb_links.style.right = "0";
+    }
+
+    function hideBurger(){
+        ucb_links.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

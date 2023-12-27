@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UC-BaniladWiki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UC-Banilad Wiki</title>
+</head>
+<body>
+        <section class="heading">
+            <nav>
+                <a href="index.html"><img src="University-of-Cebu-Logo.png"></a>
+                <div class="ucb-links" id="ucb_links">
+                    <i onclick="hideBurger()" class="fa fa-times" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="UC-BaniladAboutUs.html">ABOUT</a></li>
+                        <li><a href="UC-BaniladClasses.html">CLASSES</a></li>
+                        <li><a href="UC-BaniladDeans.html">DEANS</a></li>
+                        <li><a ref="UC-BaniladEvents.html">EVENTS</a></li>
+                        <li><a href="UC-BaniladReviews.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <i onclick="showBurger()" class="fa fa-bars" aria-hidden="true"></i>
+            </nav>
+            <div class="ucb-box">
+                <h1>Begin on an Academic Quest and be a UCnian</h1>
+                <p>Embark on an Epic Quest for Knowledge at University of Cebu Banilad: Unleash Your Potential, Conquer Challenges. <br> Level Up Your Future in the Grand Adventure of Education!</p>
+                <a href="#middle-section" class="ucb-btn">Visit to unravel the mysteries with us.</a>
+            </div>
+        
+        </section>
+    
+        <section id="middle-section" class="difficulty">
+            <h1>Difficulty</h1>
+            <p>UC-Banilad has three difficulties that players can pick</p>
+
+            <div class="row">
+                <div class="difficulty-column">
+                    <h2 style="color: green;">Normal</h2>
+                    <p>Embrace the student's quest in college life. Focus on studies, overcome distractions, and pursue passing grades—therein lies your main storyline's essence. Recommended for new players.</p>
+                </div>
+                <div class="difficulty-column">
+                    <h2 style="color: rgb(233, 233, 35);">Officer</h2>
+                    <p>Embrace the role of an officer in a prestigious organization. Navigate side quests to advance the main storyline, unlocking its unfolding saga with passing grades as your key. Recommended for experienced players.</p>
+                </div>
+                <div class="difficulty-column">
+                    <h2 style="color: red;">Scholar</h2>
+                    <p>Choose the path of a scholar or worker. Undertake side quests to shape the main storyline. Maintain your status by securing good grades or risk losing it all. Recommended for hardcore players.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="facilities" style="background-color: rgb(21,42,77);">
+            <h1>Facilities</h1>
+            <p>UC-Banilad has facilities that players can go to. <br>(Under development)</p>
+
+            <div class="row2">
+                <div class="facilities-column">
+                    <img src="beehive.png">
+                    <div class="layer">
+                        <h2>Beehive</h2>
+                    </div>
+                </div>
+                <div class="facilities-column">
+                    <img src="library.jpg">
+                    <div class="layer">
+                        <h2>Library</h2>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ucb-lore">
+            <h1>University of Cebu Lore</h1>
+            <p>A short video for the lore of University of Cebu.</p>
+            <iframe src="https://www.youtube.com/embed/EhfMHLNEM1A" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section class="ucb-banner">
+            <h1>Start on the player manual and ready yourself <br> to become a Ucnian.</h1>
+            <a href="https://drive.google.com/file/d/0B9CbslHw6_vRcnZQVndzTnZDRkE/view?resourcekey=0-IAUTSKaTTiIUTnaDXvEYuQ" target="_blank" class="ucb-btn">MANUAL</a>
+        </section>
+
+        <section class="ucb-footer" style="background-color: rgb(21,42,77);">
+            <h2>More Info</h3>
+            <p>For more info about the game, here are the social medias.</p>
+            <div class="ucb-icons">
+                <a href="https://www.facebook.com/UniversityOfCebuWebmasters/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fuc_webmasters" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ucwebmaster/?hl=en" class="fa fa-instagram"></a>
+            </div>
+        </section>
+
+<script>
+
+    var ucb_links = document.getElementById("ucb_links");
+
+    function showBurger(){
+        ucb_links.style.right = "0";
+    }
+
+    function hideBurger(){
+        ucb_links.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UC-BaniladWiki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reviews</title>
+</head>
+<body>
+        <section class="sub-heading">
+            <nav>
+                <a href="index.html"><img src="University-of-Cebu-Logo.png"></a>
+                <div class="ucb-links" id="ucb_links">
+                    <i onclick="hideBurger()" class="fa fa-times" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="UC-BaniladAboutUs.html">ABOUT</a></li>
+                        <li><a href="UC-BaniladClasses.html">CLASSES</a></li>
+                        <li><a href="UC-BaniladDeans.html">DEANS</a></li>
+                        <li><a href="UC-BaniladEvents.html">EVENTS</a></li>
+                        
+                        <li><a href="UC-BaniladReviews.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <i onclick="showBurger()" class="fa fa-bars" aria-hidden="true"></i>
+            </nav>
+            <h1>Reviews</h1>
+        </section>
+
+    <section class="about-content">
+                <div class="row">
+                    <div class="about-column">
+                        <h1>Student's Review</h1>
+                        <p>Delve into our realm's chronicle, where intrepid scholars pen tales of their quests and triumphs. This enchanted archive echoes with voices of those who've navigated our courses, offering insights and inspirations to future adventurers. Journey forth and uncover the wisdom within!</p>
+                    </div>
+                    <div class="about-column">
+                        <video src="lv_0_20231222154302.mp4" controls></video>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+
+   <section class="ucb-footer" style="background-color: rgb(21,42,77);">
+            <h2>More Info</h3>
+            <p>For more info about the game, here are the social medias.</p>
+            <div class="ucb-icons">
+                <a href="https://www.facebook.com/UniversityOfCebuWebmasters/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fuc_webmasters" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ucwebmaster/?hl=en" class="fa fa-instagram"></a>
+            </div>
+    </section> 
+
+<script>
+
+    var ucb_links = document.getElementById("ucb_links");
+
+    function showBurger(){
+        ucb_links.style.right = "0";
+    }
+
+    function hideBurger(){
+        ucb_links.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

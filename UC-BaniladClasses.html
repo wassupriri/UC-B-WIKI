@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UC-BaniladWiki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Classes </title>
+</head>
+<body>
+        <section class="sub-heading2">
+            <nav>
+                <a href="index.html"><img src="University-of-Cebu-Logo.png"></a>
+                <div class="ucb-links" id="ucb_links">
+                    <i onclick="hideBurger()" class="fa fa-times" aria-hidden="true"></i>
+                    <ul>
+                      <li><a href="index.html">HOME</a></li>
+                        <li><a href="UC-BaniladAboutUs.html">ABOUT</a></li>
+                        <li><a href="UC-BaniladClasses.html">CLASSES</a></li>
+                        <li><a href="UC-BaniladDeans.html">DEANS</a></li>
+                        <li><a href="UC-BaniladEvents.html">EVENTS</a></li>
+                        <li><a href="UC-BaniladReviews.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <i onclick="showBurger()" class="fa fa-bars" aria-hidden="true"></i>
+            </nav>
+            <h1>Classes</h1>
+        </section>
+
+        <section class="difficulty">
+            <h1>Choose a Class</h1>
+            <p>UC-Banilad has classes that players can pick to create different builds <br> and learn different skills</p>
+
+            <div class="row2">
+                <div onclick="openModalById('modal1')" class="facilities-column">
+                    <img src="CBA-removebg-preview.png">
+                    <div class="layer">
+                        <h2>CBA</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal2')" class="facilities-column">
+                    <img src="CCS-removebg-preview.png">
+                    <div class="layer">
+                        <h2>CCS</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal3')" class="facilities-column">
+                    <img src="CHM-removebg-preview.png">
+                    <div class="layer">
+                        <h2>CHM</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal4')" class="facilities-column">
+                    <img src="COC-removebg-preview.png">
+                    <div class="layer">
+                        <h2>COC</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal5')" class="facilities-column">
+                    <img src="COE-removebg-preview.png">
+                    <div class="layer">
+                        <h2>COE</h2>
+                    </div>
+                </div>
+                
+                <div onclick="openModalById('modal7')" class="facilities-column">
+                    <img src="COMT-removebg-preview.png">
+                    <div class="layer">
+                        <h2>COMT</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal8')" class="facilities-column">
+                    <img src="CONurse-removebg-preview.png">
+                    <div class="layer">
+                        <h2>CON</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal9')" class="facilities-column">
+                    <img src="COT-removebg-preview.png">
+                    <div class="layer">
+                        <h2>COT</h2>
+                    </div>
+                </div>
+                <div onclick="openModalById('modal10')" class="facilities-column">
+                    <img src="CTE-removebg-preview.png">
+                    <div class="layer">
+                        <h2>CTE</h2>
+                    </div>
+            </div>
+        </section>
+
+   <section class="ucb-footer" style="background-color: rgb(21,42,77);">
+            <h2>More Info</h3>
+            <p>For more info about the game, here are the social medias.</p>
+            <div class="ucb-icons">
+                <a href="https://www.facebook.com/UniversityOfCebuWebmasters/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fuc_webmasters" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ucwebmaster/?hl=en" class="fa fa-instagram"></a>
+            </div>
+    </section> 
+
+<script>
+
+    var ucb_links = document.getElementById("ucb_links");
+
+    function showBurger(){
+        ucb_links.style.right = "0";
+    }
+
+    function hideBurger(){
+        ucb_links.style.right = "-200px";
+    }
+
+</script>
+<div class="modal" id="modal1">
+    <div class="modal-header">
+      <div class="modal-title">College Of Business Accountancy</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="CBA-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Business and Accountancy (CBA) at the University of Cebu - Banilad Campus, where we foster excellence in business education and prepare students for success in the dynamic world of commerce. The CBA offers a diverse range of programs designed to equip students with the knowledge and skills needed to excel in the fields of business and accountancy. Our curriculum is crafted to provide a comprehensive understanding of business principles, ethical practices, and financial expertise.</div>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal-header">
+      <div class="modal-title">College Of Computer Studies</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="CCS-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Computer Studies (CCS) at the University of Cebu - Banilad Campus, where innovation meets education, and technology transforms possibilities. CCS is at the forefront of shaping IT professionals and leaders of tomorrow. At CCS, we offer cutting-edge programs designed to prepare students for the dynamic and rapidly evolving field of computer studies. Our curriculum integrates theoretical knowledge with hands-on experience, ensuring that students are well-equipped to tackle the challenges of the digital age.</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-header">
+      <div class="modal-title">Society Of Junior Hoteliers</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="CHM-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the Society of Junior Hoteliers (SOJH), a vibrant and dynamic student organization nestled within the College of Hotel and Management (CHM) at the University of Cebu - Banilad Campus. SOJH is a community of aspiring hospitality professionals dedicated to fostering excellence, leadership, and camaraderie. At SOJH, our mission is to enrich the academic and professional experiences of CHM students by providing a platform for networking, skill development, and industry exposure. We aim to cultivate a passion for hospitality and groom the next generation of leaders in the field.</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-header">
+      <div class="modal-title2" class="COC2">College Of Criminology</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="COC-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Criminology (COC) at the University of Cebu Banilad Campus, where we are committed to shaping the next generation of ethical and skilled professionals in the field of criminology. At COC, we believe in providing a comprehensive education that blends theoretical knowledge with practical skills, preparing our students for a successful and impactful career in criminology and law enforcement. COC is dedicated to academic excellence, offering a curriculum designed to provide a strong foundation in criminological theories, criminal justice systems, and forensic sciences. Our faculty consists of experienced professionals and scholars who are passionate about imparting knowledge and guiding students towards success.</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-header">
+      <div class="modal-title4">College Of Engineering</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="COE-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Engineering at the University of Cebu Banilad Campus, where innovation meets education. As a premier institution for engineering studies, we take pride in nurturing the next generation of engineers who will shape the future with their creativity, technical expertise, and commitment to excellence. The College of Engineering offers cutting-edge academic programs designed to provide students with a solid foundation in engineering principles, along with specialized knowledge in their chosen fields. Our curriculum is crafted to meet industry standards and technological advancements.</div>
+    </div>
+  </div>
+  
+
+  <div class="modal" id="modal7">
+    <div class="modal-header">
+      <div class="modal-title">College Of Med-Tech</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="COMT-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Medical Technology at the University of Cebu Banilad Campus, where the pursuit of excellence in healthcare meets a commitment to advancing medical science. Our College of Medical Technology is dedicated to providing a comprehensive and cutting-edge education for future medical laboratory professionals. The College of Medical Technology offers comprehensive programs that prepare students for a rewarding career in medical laboratory science. Our curriculum is designed to provide a strong foundation in the theoretical and practical aspects of laboratory medicine.</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal8">
+    <div class="modal-header">
+      <div class="modal-title5">College Of Nursing</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="CONurse-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Nursing at the University of Cebu Banilad Campus, where compassionate care meets academic excellence. As a leading institution for nursing education, we are dedicated to preparing students to become skilled, caring, and ethical healthcare professionals, ready to make a positive impact on the well-being of individuals and communities. The College of Nursing offers cutting-edge nursing programs designed to equip students with the knowledge and skills needed to excel in the dynamic field of healthcare. Our curriculum integrates theoretical knowledge with hands-on clinical experiences to ensure a well-rounded education.  </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal9">
+    <div class="modal-header">
+      <div class="modal-title6">College Of Tourism</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="COT-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the vibrant and dynamic College of Tourism at the University of Cebu Banilad Campus, where a world of exciting opportunities awaits those with a passion for travel, hospitality, and cultural exploration. Our College of Tourism is dedicated to shaping the next generation of tourism professionals with a global perspective. The College of Tourism offers innovative and industry-relevant programs designed to prepare students for diverse careers in the dynamic field of tourism. Whether your interest lies in travel management, hospitality, or event planning, our programs provide a comprehensive and experiential education.</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal10">
+    <div class="modal-header">
+      <div class="modal-title7">College Of Teacher Education</div>
+      <button data-close-btn class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-logo"><img src="CTE-removebg-preview.png" alt=""></div>
+      <div class="modal-description">Welcome to the College of Teacher Education at the University of Cebu Banilad Campus, where we are dedicated to shaping the future of education through excellence in teaching, research, and community engagement. Aspiring educators join a vibrant academic community committed to nurturing passionate and highly qualified professionals in the field of education. Our programs in Teacher Education are designed to provide a holistic and comprehensive preparation for future educators. We focus on developing not only pedagogical skills but also fostering a deep understanding of educational theory, psychology, and inclusive teaching practices</div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+<script src="UC-BaniladClasses.js"></script>
+</html>
